@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "tokyoo-olympic-syn"
+		},
+		"AzureDataLakeStorageforendtoendproject_accountKey": {
+			"value": ""
+		},
+		"tokyoo-olympic-syn-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:tokyoo-olympic-syn.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"Athleteshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/main/data/Athletes.csv"
+		},
+		"Atteletes_properties_typeProperties_url": {
+			"value": "https://github.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/blob/main/data/Athletes.csv"
+		},
+		"AzureDataLakeStorageforendtoendproject_properties_typeProperties_url": {
+			"value": "https://tokyoolympoicdata.dfs.core.windows.net/"
+		},
+		"Coacheshhtp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/main/data/Coaches.csv"
+		},
+		"EntriesGenderhttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/main/data/EntriesGender.csv"
+		},
+		"Teamshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/main/data/Teams.csv"
+		},
+		"medalshttp_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/darshilparmar/tokyo-olympic-azure-data-engineering-project/main/data/Medals.csv"
+		},
+		"tokyoo-olympic-syn-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://tokyoolympoicdata.dfs.core.windows.net"
+		}
+	}
+}
